@@ -1,0 +1,35 @@
+{
+  "grammars": [
+    {
+      "name": "horn",
+      "camelcase": "Horn",
+      "scope": "source.horn",
+      "file-types": [
+        ".horn"
+      ],
+      "injection-regex": "^horn$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Horn parser",
+    "authors": [
+      {
+        "name": "Giannos Chatziagapis",
+        "email": "giannos.chatziagapis@gmail.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/tree-sitter/tree-sitter-horn"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
