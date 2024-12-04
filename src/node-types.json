@@ -1,12 +1,749 @@
 [
   {
+    "type": "and",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "application",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "exists",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "lambda",
+          "named": true
+        },
+        {
+          "type": "not",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "application",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "application",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "exists",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "lambda",
+          "named": true
+        },
+        {
+          "type": "not",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "body",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "application",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "existential_body",
+          "named": true
+        },
+        {
+          "type": "exists",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "lambda",
+          "named": true
+        },
+        {
+          "type": "not",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "clause",
+    "named": true,
+    "fields": {
+      "parameters": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "const",
+            "named": true
+          },
+          {
+            "type": "var",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "body",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "existential_body",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "body",
+          "named": true
+        },
+        {
+          "type": "typed_var",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "exists",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "application",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "exists",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "lambda",
+          "named": true
+        },
+        {
+          "type": "not",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "typed_var",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fact",
+    "named": true,
+    "fields": {
+      "parameters": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "const",
+            "named": true
+          },
+          {
+            "type": "var",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "const",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lambda",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "application",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "exists",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "lambda",
+          "named": true
+        },
+        {
+          "type": "not",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "typed_var",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "not",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "application",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "exists",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "lambda",
+          "named": true
+        },
+        {
+          "type": "not",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "or",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "application",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "exists",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "lambda",
+          "named": true
+        },
+        {
+          "type": "not",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "query",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "body",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "source_file",
     "named": true,
     "root": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "clause",
+          "named": true
+        },
+        {
+          "type": "fact",
+          "named": true
+        },
+        {
+          "type": "query",
+          "named": true
+        },
+        {
+          "type": "typing_declaration",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "hello",
+    "type": "type_arrow",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "type_arrow",
+          "named": true
+        },
+        {
+          "type": "type_i",
+          "named": true
+        },
+        {
+          "type": "type_o",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "typed_var",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "type_arrow",
+          "named": true
+        },
+        {
+          "type": "type_i",
+          "named": true
+        },
+        {
+          "type": "type_o",
+          "named": true
+        },
+        {
+          "type": "typed_var",
+          "named": true
+        },
+        {
+          "type": "var",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "typing_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "type_arrow",
+          "named": true
+        },
+        {
+          "type": "type_i",
+          "named": true
+        },
+        {
+          "type": "type_o",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "->",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "/\\",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": ":-",
+    "named": false
+  },
+  {
+    "type": "::",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "=>",
+    "named": false
+  },
+  {
+    "type": "?-",
+    "named": false
+  },
+  {
+    "type": "\\",
+    "named": false
+  },
+  {
+    "type": "\\/",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "const",
+    "named": true
+  },
+  {
+    "type": "false",
+    "named": true
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": true
+  },
+  {
+    "type": "type_i",
+    "named": true
+  },
+  {
+    "type": "type_o",
+    "named": true
+  },
+  {
+    "type": "var",
+    "named": true
+  },
+  {
+    "type": "~",
     "named": false
   }
 ]
